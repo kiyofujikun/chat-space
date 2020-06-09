@@ -1,0 +1,35 @@
+.Main_chat
+  .Main_top
+    .Header-groups
+      .Header-group
+        test
+      .Header-member
+        Member : kiyo
+    = link_to "#", class: "Header-edit" do
+      Edit
+  .Main_center
+    .Message-box
+      .Message-info
+        .Message-info__user-name
+          kiyo
+        .Message-info__date
+          2020年06月08日 14時31分
+      .Message
+        おはよう
+    .Message-box
+      .Message-info
+        .Message-info__user-name
+          kiyo
+        .Message-info__date
+          2020年06月08日 14時31分
+      .Message
+        こんばんは
+  .Under_content
+    .Form
+      %form.Form__contents
+      .Form__inputBox
+        %input.Form__inputText{"placeholder": "type a message", "type": "text"}
+          %label.Form__inputImg{"name": "message[image]",}
+            = icon('far', 'image')
+            %input.Form__inputImg_file{"name": "message[image]", "type": "file"}
+      %input.Form__submitBtn{"name": "commit", "type": "submit", "value": "Send"}
