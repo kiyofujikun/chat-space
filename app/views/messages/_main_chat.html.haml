@@ -1,29 +1,29 @@
-.Main_chat
-  .Main_top
-    .Header-groups
-      .Header-group
+.Chat
+  .MainHeader
+    .MainHeader__group
+      .MainHeader__groupName
         test
-      .Header-member
+      .MainHeader__memberList
         Member : kiyo
-    = link_to "#", class: "Header-edit" do
+    = link_to "#", class: "MainHeader__Edit" do
       Edit
-  .Main_center
-    .Message-box
-      .Message-info
-        .Message-info__user-name
+  .Message
+    .Message__box
+      .Message__info
+        .Message__user-name
           kiyo
-        .Message-info__date
+        .Message__date
           2020年06月08日 14時31分
-      .Message
+      .Message__comment
         おはよう
-    .Message-box
-      .Message-info
-        .Message-info__user-name
+    .Message__box
+      .Message__info
+        .Message__user-name
           kiyo
-        .Message-info__date
+        .Message__date
           2020年06月08日 14時31分
-      .Message
-        こんばんは
+      .Message__comment
+        こんばんわ
   .Under_content
     .Form
       %form.Form__contents

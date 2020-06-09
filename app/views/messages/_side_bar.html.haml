@@ -1,16 +1,16 @@
-.Side_header
-  .Side_top
-    .Side_box
-      .user-name
+.SideBar
+  .LeftHeader
+    .LeftHeader__list
+      .LeftHeader__UserName
         kiyo
-      .system
-        = link_to " # ", class: "Header__icons"  do
-          = icon('fas', 'edit', class: "Header__icon")
-        = link_to " # ", class: "Header__icons"  do
-          = icon('fa', 'cog', class: "Header__icon")
-  .Groups
+      .LeftHeader__iconList
+        = link_to " # ", class: "LeftHeader__Icon"  do
+          = icon('fas', 'edit', class: "LeftHeader__Icon")
+        = link_to " # ", class: "LeftHeader__Icon"  do
+          = icon('fa', 'cog', class: "LeftHeader__Icon")
+  .GroupList
     .Group
-      .Group-name
+      .Group__name
         techcamp
-      .Group-messages
+      .Group__message
         まだメッセージがありません
