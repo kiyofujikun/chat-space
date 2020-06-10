@@ -1,16 +1,17 @@
 .SideBar
   .LeftHeader
     .LeftHeader__list
-      .LeftHeader__UserName
-        kiyo
+      %h3.LeftHeader__UserName
+        = current_user.name
       .LeftHeader__iconList
         = link_to " # ", class: "LeftHeader__Icon"  do
           = icon('fas', 'edit', class: "LeftHeader__Icon")
-        = link_to " # ", class: "LeftHeader__Icon"  do
+        = link_to edit_user_path(current_user) do
           = icon('fa', 'cog', class: "LeftHeader__Icon")
   .GroupList
     .Group
-      .Group__name
-        techcamp
-      .Group__message
-        まだメッセージがありません
+      = link_to '#' do
+        .Group__name
+          techcamp
+        .Group__message
+          まだメッセージがありません
