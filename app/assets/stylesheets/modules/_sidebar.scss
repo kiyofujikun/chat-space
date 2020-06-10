@@ -8,10 +8,10 @@
   background-color: #253141;
   display: flex;
   align-items: center;
+  padding: 0 20px;
   &__list{
     height: 20px;
     width: 260px;
-    margin: 0 20px;
     display: flex;
     justify-content: space-between;
     color: #ffffff;
@@ -20,6 +20,7 @@
 
   &__UserName{
     font-size: 16px;
+    display: block;
     }
   &__iconList{
     display: flex;
@@ -38,14 +39,16 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     .Group{
-      color: #ffffff;
       padding: 20px 20px 40px 20px;
+      box-sizing: border-box;
       &__name{
         font-size: 15px;
+        color: #ffffff;
       }
       &__message{
         font-size: 11px;
         margin-top: 5px;
+        color: #ffffff;
       }
-    }
+     }
 }
