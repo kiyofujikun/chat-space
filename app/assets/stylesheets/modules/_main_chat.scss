@@ -67,6 +67,11 @@
     .Form{
       display: flex;
       justify-content: space-between;
+      &__contents{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+      }
       &__inputBox{
         width: 100%;
         display: flex;
