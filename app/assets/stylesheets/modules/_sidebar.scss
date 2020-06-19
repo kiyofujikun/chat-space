@@ -3,6 +3,7 @@
   width: 300px;
   background-color: #253141;
 }
+
 .LeftHeader{
   height: 100px;
   background-color: #253141;
@@ -15,12 +16,12 @@
     display: flex;
     justify-content: space-between;
     color: #ffffff;
-    font-weight: bold;
   }
 
   &__UserName{
     font-size: 16px;
     display: block;
+    font-weight: bold;
     }
   &__iconList{
     display: flex;
